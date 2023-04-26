@@ -1,0 +1,27 @@
+[debug] [2023-04-26T05:40:38.854Z] ----------------------------------------------------------------------
+[debug] [2023-04-26T05:40:38.856Z] Command:       /Users/ikuya/.asdf/installs/firebase/11.26.0/bin/firebase /Users/ikuya/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2023-04-26T05:40:38.857Z] CLI Version:   11.26.0
+[debug] [2023-04-26T05:40:38.857Z] Platform:      darwin
+[debug] [2023-04-26T05:40:38.857Z] Node Version:  v16.16.0
+[debug] [2023-04-26T05:40:38.859Z] Time:          Wed Apr 26 2023 14:40:38 GMT+0900 (GMT+09:00)
+[debug] [2023-04-26T05:40:38.859Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-26T05:40:38.946Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-26T05:40:38.947Z] > authorizing via signed-in user (kichiemon.dev@gmail.com)
+[debug] [2023-04-26T05:40:38.947Z] [iam] checking project portfolio-kichiemon for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-04-26T05:40:38.950Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-kichiemon:testIamPermissions [none]
+[debug] [2023-04-26T05:40:38.950Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-kichiemon:testIamPermissions x-goog-quota-user=projects/portfolio-kichiemon
+[debug] [2023-04-26T05:40:38.950Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-kichiemon:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-04-26T05:40:39.700Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-kichiemon:testIamPermissions 200
+[debug] [2023-04-26T05:40:39.700Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-kichiemon:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-04-26T05:40:39.702Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-kichiemon [none]
+[debug] [2023-04-26T05:40:40.356Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-kichiemon 200
+[debug] [2023-04-26T05:40:40.356Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-kichiemon {"projectId":"portfolio-kichiemon","projectNumber":"412691254006","displayName":"myPortfolio","name":"projects/portfolio-kichiemon","resources":{"hostingSite":"portfolio-kichiemon"},"state":"ACTIVE","etag":"1_b7270b5b-601e-4a5b-a3f4-39075005c4e7"}
+[debug] [2023-04-26T05:41:30.824Z] Error: Command failed: npm i --omit dev --no-audit
+    at checkExecSyncError (node:child_process:828:11)
+    at Object.execSync (node:child_process:899:15)
+    at execSync (pkg/prelude/bootstrap.js:2111:30)
+    at prepareFrameworks (/Users/ikuya/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/frameworks/index.js:392:42)
+    at async deploy (/Users/ikuya/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/deploy/index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.
