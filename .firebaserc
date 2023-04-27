@@ -1,5 +1,18 @@
 {
   "projects": {
     "default": "portfolio-kichiemon"
-  }
+  },
+  "targets": {
+    "portfolio-kichiemon": {
+      "hosting": {
+        "storybook": [
+          "kichiemon-portfolio-storybook"
+        ],
+        "portfolio": [
+          "kichiemon-portfolio"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

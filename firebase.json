@@ -1,13 +1,27 @@
 {
-  "hosting": {
+  "hosting": [
+    {
+      "target": "portfolio",
     "source": ".",
     "ignore": [
       "firebase.json",
       "**/.*",
-      "**/node_modules/**"
+      "**/node_modules/**",
+      "**/storybook-static/**"
     ],
     "frameworksBackend": {
       "region": "asia-east1"
-    }
+    },
+    "predeploy": "pnpm install --frozen-lockfile && pnpm run build"
+  },
+  {
+    "target": "storybook",
+    "ignore": [],
+    "frameworksBackend": {
+      "region": "asia-east1"
+    },
+    "predeploy": "pnpm install --frozen-lockfile && pnpm run build-storybook",
+    "public": "storybook-static"
   }
+  ]
 }
