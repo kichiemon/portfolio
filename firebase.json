@@ -1,7 +1,7 @@
 {
   "hosting": [
-    {
-      "target": "portfolio",
+  {
+    "target": "portfolio",
     "source": ".",
     "ignore": [
       "firebase.json",
@@ -11,8 +11,7 @@
     ],
     "frameworksBackend": {
       "region": "asia-east1"
-    },
-    "predeploy": "pnpm install --frozen-lockfile && pnpm run build"
+    }
   },
   {
     "target": "storybook",
